@@ -39,7 +39,7 @@ class App extends Component {
   render() {
     return (
       <>
-        <div>
+        <div className='inp'>
           <input type="text" placeholder='Enter task' value={this.state.task} onChange={(e)=>this.addtotask(e)}/>
           <button onClick={this.addtasktolist}>Add Task</button>
         </div>
@@ -48,7 +48,7 @@ class App extends Component {
               return (
               <div key={index}>
               <input type="text" placeholder='Enter task'  value={item} onChange={(e)=>this.update(index,e)}/>
-              <button onClick={this.delete}>Delete</button>
+              <button onClick={this.delete}>Delete Items</button>
               </div>)
             })
           }  
