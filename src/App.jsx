@@ -48,7 +48,7 @@ class App extends Component {
               return (
               <div key={index}>
               <input type="text" placeholder='Enter task'  value={item} onChange={(e)=>this.update(index,e)}/>
-              <button onClick={(e)=>this.delete(index)}>Delete Items</button>
+              <button onClick={this.delete}>Delete Items</button>
               </div>)
             })
           }  
